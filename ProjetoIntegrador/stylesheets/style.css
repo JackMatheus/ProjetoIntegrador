@@ -10,14 +10,66 @@ box-sizing: border-box;
 }
 
 /* HEADER */
+.container-fluid {
+  margin-left: 500px;
+}
 
-header{
+button.btn.btn-primary {
+  /* position: absolute;
+  margin-right: 100px; */
+}
+
+/* ul.navbar-nav {
+  padding: 30px;
+}
+
+div#navbarNav {
+  max-width: 500px;
+} */
+
+/* cliente */
+section.cliente{
   display: flex;
+  padding: 10px;
+  position: relative;
+}
+
+img {
+    width: 900px;
+    position: relative;
+}
+
+section.button{
+  display: flex;
+  position: relative
+}
+
+h3 {
+  position: absolute;
+}
+p {
+   position: absolute;
+  }
+
+button.btn.btn-primary {
+      position: absolute;
+  }
+
+/* <!-- section 2 - rezerva - carrocel --> */
+
+.carousel{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(16, 63, 16) ;
+  
 }
 
 
-header nav img{
-  width: 100px;
-}
+
+
+
+
+
+
 
 
