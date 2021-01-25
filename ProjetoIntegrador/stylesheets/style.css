@@ -15,24 +15,22 @@ box-sizing: border-box;
 }
 
 button.btn.btn-primary {
-  /* position: absolute;
-  margin-right: 100px; */
+  margin: left: 300px;
+  margin-left: 980px;
+  position: absolute;
+  background-color: green;
+  color: white;
+ 
 }
-
-/* ul.navbar-nav {
-  padding: 30px;
-}
-
-div#navbarNav {
-  max-width: 500px;
-} */
 
 /* cliente */
 section.cliente{
   display: flex;
   padding: 10px;
+  background-color: #caca7d;
   position: relative;
-}
+  height: 600px;
+  /* margin-top: 10px; */
 
 img {
     width: 900px;
@@ -46,23 +44,51 @@ section.button{
 
 h3 {
   position: absolute;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-top: 100px;
+  margin-left: 150px;
+
 }
 p {
-   position: absolute;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 350px;
+  color: orange;
+  font-weight: bold;
   }
 
-button.btn.btn-primary {
-      position: absolute;
+button.btn.btn-second {
+  position: absolute;
+  margin-top: 270px;
+  margin-left: -550px;
+  background-color: green;
+  color: white;
   }
 
 /* <!-- section 2 - rezerva - carrocel --> */
-
-.carousel{
-  width: 100%;
-  height: 200px;
-  background-color: rgb(16, 63, 16) ;
-  
+.card-deck {
+  margin-top: 200px;
 }
+
+.container2 {
+  background-color: #72A200;
+  position: relative;
+  margin-top: 5px;
+  /* height: auto; */
+  height: 700px;
+}
+
+h2.rezerva{
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+
+
+
 
 
 
