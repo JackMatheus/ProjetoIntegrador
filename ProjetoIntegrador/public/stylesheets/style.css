@@ -1,0 +1,228 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/* HEADER */
+
+header{
+  display: flex;
+ 
+}
+
+.container_header{
+  display: flex;  
+}
+
+.container-fluid { 
+  display: flex;
+  /* background-color: #72A200;    */
+  position: absolute;
+  width: 1180px;
+  height: 100px;
+  margin-top: 70px;
+  
+}
+a.navbar-brand {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+
+button.btn.btn-primary {
+    position: absolute;
+  background-color: black;
+  font-weight: bold; 
+  margin-left: 1100px;
+  margin-top: 100px;
+ 
+}
+
+/* cliente */
+section.cliente{
+  display: flex;
+  padding: 10px;
+  background-color: #caca7d;
+  position: relative;
+  height: 600px;
+  margin-top: 10px;
+}
+
+.img {
+    width: 900px;
+    position: relative;
+}
+
+/* section.button{
+  display: flex;
+  position: relative
+} */
+
+button.btn.btn-second {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 500px;
+  background-color: #72A200;
+  color: white;
+  font-weight: bold;
+  
+}
+
+h3.rezerva{
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-top: 100px;
+  margin-left: 150px;
+
+}
+p.rezerva{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 350px;
+  color: orange;
+  font-weight: bold;
+  }
+
+/* <!-- section 2 - rezerva - carrocel --> */
+.card-deck {
+  margin-top: 20px;
+}
+
+.container2 {
+  background-color: #72A200;
+  position: relative;
+  margin-top: 5px;
+  /* height: auto; */
+  height: 550px;
+}
+
+.rezerva{
+  color: white;
+  font-size: 2rem;
+  /* margin-top: 70px; */
+  margin-left: 350px;
+}
+
+p.card-text {
+  margin-top: 30px;
+  margin-left: 10px;
+  /* position: relative; */
+
+}
+
+/* section 3 - Cadastre */
+
+section.cadastre {
+  margin-top: 10px;
+  height: 220px;
+  /* display: flex; */
+  /* display: contents; */
+  /* align-items: center; */
+  /* background-color: rgb(240, 231, 181); */
+}
+
+h3.cadastre {
+  /* height: 150px; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-weight: bold;
+}
+
+p.cadastre {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+button.btn.btn-third {
+  margin-left: 500px;
+  background-color: #72A200;
+  color: white;
+  font-weight: bold;
+  
+}
+
+/* section 4 - Clientes */
+section.container4 {
+    /* display: flex;
+  display: contents; */
+  height: 400px;
+  background-color: #da773a;
+  /* justify-content: center; */
+  }
+
+  
+.clientes {
+display: flex;
+/* margin-top: 15px; */
+/* align-items: center; */
+justify-content: center;
+/* font-weight: bold; */
+}
+
+p.clientes {
+margin-top: 15px;
+display: flex;
+justify-content: center;
+font-size: 20px;
+}
+
+button.btn.btn-fourth {
+display: flex;
+margin-left: 500px;
+background-color: #72A200;
+color: white;
+font-weight: bold;
+position: absolute;
+
+}
+
+h3.clientes {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+/* footer */
+
+.footer {
+  color: rgb(201, 99, 99);
+  background-color: rgb(32, 33, 124);
+} 
+
+/* .icons {
+    color: white;
+  }
+
+  p {
+    color: white;
+}
+
+div {
+  color: white;
+}  */
+
+footer.footer {
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin-left: 70px;
+  max-width: 1110px;
+}
+
+
+
+
+
