@@ -1,0 +1,228 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/* HEADER */
+
+.nav-link{
+  font-weight: bold;
+}
+
+.container00{
+  padding: 2px;
+}
+
+/* cliente */
+
+.container {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 2px;
+}
+
+p.cliente {
+  color: orange;
+  float: center;
+}
+
+.titlecliente {
+    color:rebeccapurple;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    /* justify-content: flex-start; */
+}
+
+.card-text {
+  color:rgb(201, 99, 99);
+  font-weight: bold;
+  color: orange;
+  
+}
+
+/* aqui */
+.card-bodycliente {
+position: absolute;
+width: 80%;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+/* align-items: flex-end; */
+}
+
+.card-body {
+  /* position: absolute; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  }
+
+.jeitosimples {
+  margin-left: 55%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container2 {
+  background-color: #72A200;
+  position: relative;
+  /* margin-top: 5px; */
+  height: auto;
+  margin-bottom: 7%;
+  margin-top: 2%;
+  padding: 5em 1em 10em 1em;
+}
+
+.rezerva {
+    color: rebeccapurple;
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-left: 350px;
+    position: relative;
+    display: flex;
+    text: white
+}
+
+p.card-text {
+  margin-top: 30px;
+  margin-left: 10px;
+  /* position: relative; */
+
+}
+
+.card-deck {
+    /* display: -ms-flexbox; */
+    display: flex;
+    /* -ms-flex-flow: row wrap; */
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 5%;
+}
+
+
+/* section 3 - Cadastre */
+
+.container3{ 
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.cadastre{
+  display: flex;
+  text-align:right;
+}
+
+/* section 4 - Clientes */
+
+.container4 {
+  display:flex;
+  /* background: linear-gradient(to bottom, #f65d00); */
+  /* background-color: linear-gradient(to bottom, #f65d00); */
+  background-color: #f65d00;
+  position: relative; 
+  padding: 2px;
+}
+
+.clientes4 {
+    size: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 2%;
+}
+
+.amandaprincipal{
+  display: flex;
+}
+
+.amanda{
+  font-size: 18px;
+}
+
+.amandarmassa {
+  font-size: 12px;
+}
+
+/* footer */
+
+.footer {
+  color: rgb(201, 99, 99);
+  background-color: black;
+} 
+
+footer.footer {
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+footer {
+  height: 100px;
+}
+
+footer .icons {
+  font-size: 50px;
+}
+
+
+/* botoes */
+
+button.btn.btn-third {
+  background-color: rgb(64, 168, 32);
+  font-weight: bold; 
+  color: white;
+}
+.botaocadastre{
+margin-right: 45%;
+margin-top: 2%;
+margin-bottom: 1%;
+}
+
+
+button.btn.btn-fourth {
+background-color: rgb(64, 168, 32);
+font-weight: bold; 
+color: white;
+}
+
+button.btn.btn-second {
+  background-color: rgb(64, 168, 32);
+  font-weight: bold; 
+  color: white;
+  }
+
+
+button.btn.btn-primary {
+    background-color: black;
+    font-weight: bold; 
+    color: white;
+    }
+
+
+
+
+
+
