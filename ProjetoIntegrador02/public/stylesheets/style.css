@@ -10,15 +10,25 @@ body {
   }
 /* HEADER */
 
-.nav-link{
-  font-weight: bold;
-}
-
 .container00{
   padding: 2px;
 }
 
-/* cliente */
+.nav-link{
+color: rgb(0, 0, 0) !important;
+font: times news roman, serif ;
+font-weight: bold;
+font-size: 1rem;
+padding:2%;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .8rem;
+  padding-left: .8rem;
+}
+
+/*1- palavra referencia - cliente */
 
 .container {
   display: flex;
@@ -30,15 +40,19 @@ body {
 p.cliente {
   color: orange;
   float: center;
+  font-size: max(18px, 2vw);
 }
 
 .titlecliente {
     color:rebeccapurple;
     margin-left: 15%;
     margin-top: 10%;
-    font-size: 25px;
+    /* font-size: 25px; valor fixo*/
     font-weight: bold;
-    /* justify-content: flex-start; */
+   }
+
+.max h5{
+  font-size: max(25px, 5vw);
 }
 
 .card-text {
@@ -48,18 +62,15 @@ p.cliente {
   
 }
 
-/* aqui */
 .card-bodycliente {
 position: absolute;
 width: 80%;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-/* align-items: flex-end; */
 }
 
 .card-body {
-  /* position: absolute; */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -69,50 +80,45 @@ margin: 0 auto;
 
 .jeitosimples {
   margin-left: 55%;
-  font-size: 25px;
+  font-size: 100%;
   font-weight: bold;
 }
 
+/* 2- palavra referencia rezerva  */
 .container2 {
   background-color: #72A200;
   position: relative;
-  /* margin-top: 5px; */
   height: auto;
   margin-bottom: 7%;
   margin-top: 2%;
   padding: 5em 1em 10em 1em;
 }
 
+.text-white {
+  color: #fff !important;
+  font-size: max(20px, 2vw);
+  font-weight: bold;
+}
+
 .rezerva {
     color: rebeccapurple;
     font-size: 2rem;
-    margin-top: 70px;
-    margin-left: 350px;
     position: relative;
     display: flex;
     text: white
 }
 
-p.card-text {
-  margin-top: 30px;
-  margin-left: 10px;
-  /* position: relative; */
-
-}
 
 .card-deck {
-    /* display: -ms-flexbox; */
     display: flex;
-    /* -ms-flex-flow: row wrap; */
+    /* verificar as margens */
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     margin-top: 5%;
+    padding: 0%;
 }
 
 
 /* section 3 - Cadastre */
-
 .container3{ 
     position: relative;
     margin-bottom: 5%;
@@ -122,6 +128,12 @@ p.card-text {
 .cadastre{
   display: flex;
   text-align:right;
+}
+
+h3.text-center{
+  font-size: max(25px, 2vw);
+  font-weight: bold;
+
 }
 
 /* section 4 - Clientes */
@@ -144,7 +156,7 @@ p.card-text {
 }
 
 .row {
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -157,11 +169,11 @@ p.card-text {
 }
 
 .amanda{
-  font-size: 18px;
+   font-size: min(18px, 3vw);
 }
 
 .amandarmassa {
-  font-size: 12px;
+    font-size: min(14px, 3vw);
 }
 
 /* footer */
@@ -172,11 +184,13 @@ p.card-text {
 } 
 
 footer.footer {
-  height: 100px;
+  height: auto;
   justify-content: center;
   display: flex;
   position: relative;
   align-items: center;
+  font-size: max(12px, 1vw);
+  padding: 2%;
 }
 
 footer {
@@ -184,7 +198,7 @@ footer {
 }
 
 footer .icons {
-  font-size: 50px;
+  font-size: 200%;;
 }
 
 
@@ -220,6 +234,20 @@ button.btn.btn-primary {
     font-weight: bold; 
     color: white;
     }
+
+/* section 2.1 - referencia palavra - triangulo */
+/* div{
+  display:inline-block;
+  margin-right: 50px;
+} */
+
+/* #triagulo-para-direta{
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #4c4b63
+} */
 
 
 
