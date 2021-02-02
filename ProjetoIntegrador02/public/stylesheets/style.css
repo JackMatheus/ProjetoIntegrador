@@ -40,19 +40,20 @@ padding:2%;
 p.cliente {
   color: orange;
   float: center;
-  font-size: max(18px, 2vw);
+  font-size: min(25px,2vw);
+  font-weight: bold;
 }
 
 .titlecliente {
-    color:rebeccapurple;
+    color:black;
     margin-left: 15%;
     margin-top: 10%;
-    /* font-size: 25px; valor fixo*/
-    font-weight: bold;
+    font-size: min(25px,2vw);
+   font-weight: bold;
    }
 
 .max h5{
-  font-size: max(25px, 5vw);
+  font-size: max(18px, 2vw);
 }
 
 .card-text {
@@ -198,8 +199,9 @@ footer {
 }
 
 footer .icons {
-  font-size: 200%;;
-}
+  font-size: 200%;
+  font-size: min(20px,2vw);
+} 
 
 
 /* botoes */
@@ -208,6 +210,8 @@ button.btn.btn-third {
   background-color: rgb(64, 168, 32);
   font-weight: bold; 
   color: white;
+  font-size: min(20px,2vw);
+
 }
 .botaocadastre{
 margin-right: 45%;
@@ -220,12 +224,15 @@ button.btn.btn-fourth {
 background-color: rgb(64, 168, 32);
 font-weight: bold; 
 color: white;
+font-size: min(20px,2vw);
+
 }
 
 button.btn.btn-second {
   background-color: rgb(64, 168, 32);
   font-weight: bold; 
   color: white;
+  font-size: min(20px,2vw);
   }
 
 
@@ -233,21 +240,23 @@ button.btn.btn-primary {
     background-color: black;
     font-weight: bold; 
     color: white;
+    font-size: min(20px,2vw);
     }
 
-/* section 2.1 - referencia palavra - triangulo */
-/* div{
-  display:inline-block;
-  margin-right: 50px;
-} */
+/* Pagina de agendamentos */
 
-/* #triagulo-para-direta{
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 25px solid #4c4b63
-} */
+#pag-agendamentos{
+
+}
+
+#pag-agendamentos p{
+  text-align: center;
+}
+
+form{
+  background-color:  #f65d00;
+  margin: 0 auto;
+}
 
 
 
