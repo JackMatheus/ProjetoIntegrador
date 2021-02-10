@@ -1,0 +1,91 @@
+<%- include('./partials/head'); %> 
+<%- include('./partials/headerclean'); %> 
+
+<link rel='stylesheet' href='stylesheets/styleedit.css' />
+
+<main class="container">
+
+<div class="row">
+<div class="booking-form-box">
+
+<h1 class="ml-4">Altere sua rezerva</h1>
+<div class="booking-form">
+<div class="input-grp">
+<label>Horário do Check-in</label>
+<input type="time" class="form-control select-time" name="Horario" value="<%= rezerva.Horario %>" id="Horario">
+</div>
+
+<div class="input-grp">
+<label>Escolha uma data</label>
+<input type="date" class="form-control select-date"  name ="data" value="<%= rezerva.data %>" id="data">
+</div>
+
+<div class="input-grp">
+<label>Adultos</label>
+<input type="number" class="form-control" name="Adulto" value="<%= rezerva.Adulto %>" id="Adulto">
+</div>
+
+<div class="input-grp">
+<label>Crianças</label>
+<input type="number" class="form-control" name="criancas" value="<%=rezerva.criancas %>" id="criancas">
+</div>
+
+<div class="input-grp">
+<label>Escolha um setor</label>
+<select class="custom-select" name="Setor" value="<%=rezerva.Setor %>" id="Setor">  
+<option value="1">Mezanino</option>
+<option value="2">Jardim</option>
+<option value="3">Area Vip</option>
+</select>
+</div>
+<div class="input-group my-1">
+<button type="button" class="btn- btn-primary flight">Rezervar</button>
+</div>
+
+</div>
+</div>
+<!-- payment -->
+<div class="booking-form-box">
+
+  <h1 class="ml-5">Pagamento</h1>
+
+  <div class="booking-form">
+  <label>Nome</label>
+  <input type="text" class="form-control" placeholder="Name">
+  
+  <label>Number</label>
+  <input type="text" class="form-control" placeholder="Number">
+  
+  <div class="input-grp">
+  <label>Validade</label>
+  <input type="date" class="form-control select-date">
+  </div>
+  
+  <div class="input-grp">
+  <label>CVV</label>
+  <input type="date" class="form-control select-date">
+  </div>
+  
+  <div class="input-grp">
+  <label>Parcelameto</label>
+  <select class="custom-select">  
+  <option value="1">1-Parcela</option>
+  <option value="2">2-Parcela</option>
+  <option value="3">3-Parcela</option>
+  </select>
+  </div>
+  
+  <div class="input-group my-1">
+  <button type="button" class="btn- btn-primary flight">Confirmar</button>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  
+
+</main>
+ <!-- area footer -->
+ <%- include('./partials/footer'); %>
+</body> 
+</html>

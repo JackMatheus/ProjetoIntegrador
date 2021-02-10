@@ -3,9 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+// const session = require('express-session');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+//1-Criando rota users e restaurants
+// var usersRouter = require('./routes/users');
+var restaurantsRouter = require('./routes/restaurants');
+var rezervaRouter = require('./routes/rezervas');
+
 
 var app = express();
 
@@ -19,8 +24,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//2-Habilitando rota user e restaurant
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
+app.use('/restaurants', restaurantsRouter);
+app.use('/rezervas', rezervaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,5 +47,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-//subindo teste

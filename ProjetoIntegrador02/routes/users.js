@@ -1,11 +1,24 @@
 var express = require('express');
 var router = express.Router();
 
-const UserController=require('../controller/UserController');
+/* retornando formulario de restaurant */
+router.get('/', function(req, res, next) {
+    // problema aqui ao fazer o console.log
+    // console.log(cards);
+    //teste renderizar para o front localhost 3000
+    // res.json(cards)
+    res.send('respond with a resource');
+  });
 
-/* GET users listing. */ 
+  router.get('/:nome'), function(req, res, next){
+   let nome = req.params.nome;
 
+   res.send('Olá');
+  });
+  
+ 
 
-// router.get('/estabeleciemento', UserController.estabelecimento)
+// router.get('/restaurants', UserController.estabelecimento);
+
 
 module.exports = router;

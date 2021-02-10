@@ -243,20 +243,25 @@ button.btn.btn-primary {
     font-size: min(20px,2vw);
     }
 
-/* Pagina de agendamentos */
+/* Substituindo botão por nav */
 
-#pag-agendamentos{
+/* .nav-item restaurants{
+  margin-right: 45%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  }
 
-}
+  button.btn.btn restaurants {
+    background-color: rgb(64, 168, 32);
+    font-weight: bold; 
+    color: white;
+    font-size: min(20px,2vw);}  */
 
-#pag-agendamentos p{
-  text-align: center;
-}
 
-form{
-  background-color:  #f65d00;
-  margin: 0 auto;
-}
+
+
+
+
 
 
 
