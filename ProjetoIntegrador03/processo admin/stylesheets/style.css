@@ -1,0 +1,272 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/* HEADER */
+
+.container00{
+  padding: 2px;
+}
+
+.nav-link{
+color: rgb(0, 0, 0) !important;
+font: times news roman, serif ;
+font-weight: bold;
+font-size: 1rem;
+padding:2%;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .8rem;
+  padding-left: .8rem;
+}
+
+/*1- palavra referencia - cliente */
+
+.container {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding: 2px;
+}
+
+p.cliente {
+  color: orange;
+  float: center;
+  font-size: min(25px,2vw);
+  font-weight: bold;
+}
+
+.titlecliente {
+    color:black;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: min(25px,2vw);
+   font-weight: bold;
+   }
+
+.max h5{
+  font-size: max(18px, 2vw);
+}
+
+.card-text {
+  color:rgb(201, 99, 99);
+  font-weight: bold;
+  color: orange;
+  
+}
+
+.card-bodycliente {
+position: absolute;
+width: 80%;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.card-body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  }
+
+.jeitosimples {
+  margin-left: 55%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* 2- palavra referencia rezerva  */
+.container2 {
+  background-color: #72A200;
+  position: relative;
+  height: auto;
+  margin-bottom: 7%;
+  margin-top: 2%;
+  padding: 5em 1em 10em 1em;
+}
+
+.text-white {
+  color: #fff !important;
+  font-size: max(20px, 2vw);
+  font-weight: bold;
+}
+
+.rezerva {
+    color: rebeccapurple;
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    text: white
+}
+
+
+.card-deck {
+    display: flex;
+    /* verificar as margens */
+    flex-flow: row wrap;
+    margin-top: 5%;
+    padding: 0%;
+}
+
+
+/* section 3 - Cadastre */
+.container3{ 
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.cadastre{
+  display: flex;
+  text-align:right;
+}
+
+h3.text-center{
+  font-size: max(25px, 2vw);
+  font-weight: bold;
+
+}
+
+/* section 4 - Clientes */
+
+.container4 {
+  display:flex;
+  /* background: linear-gradient(to bottom, #f65d00); */
+  /* background-color: linear-gradient(to bottom, #f65d00); */
+  background-color: #f65d00;
+  position: relative; 
+  padding: 2px;
+}
+
+.clientes4 {
+    size: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.row {
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 2%;
+}
+
+.amandaprincipal{
+  display: flex;
+}
+
+.amanda{
+   font-size: min(18px, 3vw);
+}
+
+.amandarmassa {
+    font-size: min(14px, 3vw);
+}
+
+/* footer */
+
+.footer {
+  color: rgb(201, 99, 99);
+  background-color: black;
+} 
+
+footer.footer {
+  height: auto;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: max(12px, 1vw);
+  padding: 2%;
+}
+
+footer {
+  height: 100px;
+}
+
+footer .icons {
+  font-size: 200%;
+  font-size: min(20px,2vw);
+} 
+
+
+/* botoes */
+
+button.btn.btn-third {
+  background-color: rgb(64, 168, 32);
+  font-weight: bold; 
+  color: white;
+  font-size: min(20px,2vw);
+
+}
+.botaocadastre{
+margin-right: 45%;
+margin-top: 2%;
+margin-bottom: 1%;
+}
+
+
+button.btn.btn-fourth {
+background-color: rgb(64, 168, 32);
+font-weight: bold; 
+color: white;
+font-size: min(20px,2vw);
+
+}
+
+button.btn.btn-second {
+  background-color: rgb(64, 168, 32);
+  font-weight: bold; 
+  color: white;
+  font-size: min(20px,2vw);
+  }
+
+
+button.btn.btn-primary {
+    background-color: black;
+    font-weight: bold; 
+    color: white;
+    font-size: min(20px,2vw);
+    }
+
+/* Substituindo botão por nav */
+
+/* .nav-item restaurants{
+  margin-right: 45%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  }
+
+  button.btn.btn restaurants {
+    background-color: rgb(64, 168, 32);
+    font-weight: bold; 
+    color: white;
+    font-size: min(20px,2vw);}  */
+
+
+section.container{
+  background-color: tomato;
+  
+}
+
+
+
+
+
+
+
+
