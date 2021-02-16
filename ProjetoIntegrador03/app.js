@@ -7,9 +7,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 //1-Criando rota users e restaurants
-// var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/users');
 var restaurantsRouter = require('./routes/restaurants');
 var rezervaRouter = require('./routes/rezervas');
+var adminsRouter = require('./routes/admins');
 
 
 var app = express();
@@ -26,9 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //2-Habilitando rota user e restaurant
 app.use('/', indexRouter);
-// app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 app.use('/restaurants', restaurantsRouter);
 app.use('/rezervas', rezervaRouter);
+app.use('/admins', adminsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

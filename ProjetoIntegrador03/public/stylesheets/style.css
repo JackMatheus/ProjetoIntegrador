@@ -12,20 +12,34 @@ body {
 
 .container00{
   padding: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link{
 color: rgb(0, 0, 0) !important;
 font: times news roman, serif ;
 font-weight: bold;
-font-size: 1rem;
+/* font-size: 1rem; */
 padding:2%;
-
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: .8rem;
   padding-left: .8rem;
+}
+
+.navbar-nav.ml-auto {
+  text-align: center;
+  display: inline-block;
+ 
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: min(20px,2vw);
+  /* font-size: 100%; */
+  
 }
 
 /*1- palavra referencia - cliente */
@@ -85,6 +99,11 @@ margin: 0 auto;
   font-weight: bold;
 }
 
+/* ajuste da distancia em relaçao ao primeiro container  */
+.general {
+  position: relative;
+  margin-top: -18%;
+}
 /* 2- palavra referencia rezerva  */
 .container2 {
   background-color: #72A200;
@@ -124,6 +143,7 @@ margin: 0 auto;
     position: relative;
     margin-bottom: 5%;
     margin-top: 2%;
+    -webkit-box-shadow: -5px -10px 30px #900, 6px 9px 15px rgba(219, 114, 15, 0.774); 
 }
 
 .cadastre{
@@ -154,6 +174,8 @@ h3.text-center{
     max-height: 100px;
     width: auto;
     height: auto;
+    border-radius: 50px;
+
 }
 
 .row {
@@ -176,8 +198,6 @@ h3.text-center{
 .amandarmassa {
     font-size: min(14px, 3vw);
 }
-
-/* footer */
 
 .footer {
   color: rgb(201, 99, 99);
@@ -228,13 +248,12 @@ font-size: min(20px,2vw);
 
 }
 
-button.btn.btn-second {
+.btn.btn-second.ml-auto {
   background-color: rgb(64, 168, 32);
-  font-weight: bold; 
+  font-weight: bold;
   color: white;
   font-size: min(20px,2vw);
-  }
-
+}
 
 button.btn.btn-primary {
     background-color: black;
@@ -243,19 +262,6 @@ button.btn.btn-primary {
     font-size: min(20px,2vw);
     }
 
-/* Substituindo botão por nav */
-
-/* .nav-item restaurants{
-  margin-right: 45%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  }
-
-  button.btn.btn restaurants {
-    background-color: rgb(64, 168, 32);
-    font-weight: bold; 
-    color: white;
-    font-size: min(20px,2vw);}  */
 
 
 

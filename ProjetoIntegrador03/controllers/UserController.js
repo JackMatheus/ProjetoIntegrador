@@ -1,5 +1,6 @@
-const users = require('../data/user');
-
+// const bcrypt = require('bcrypt');
+// const users = require('../data/user');
+// const saveData = require('../utils/saveData');
 
 module.exports = {
   create(req, res, next){

@@ -1,17 +1,15 @@
 <%- include('./partials/head'); %> 
 <%- include('./partials/headerclean'); %> 
 
-<!-- <link rel='stylesheet' href='stylesheets/stylebooking.css' /> -->
-<link rel='stylesheet' href='/public/stylesheets/styleedit.css' />
-
+<link rel='stylesheet' href='stylesheets/styleedit.css' />
 
 <main class="container">
 <section class="formulario mt-5" id="formulario">
-<form action="/rezervas/update/<% =rezerva.id %> " method="POST">
 <div class="row">
 <div class="booking-form-box">
 
 <h3 class="ml-1">Altere sua rezerva</h3>
+<form action="/rezervas/update <%= rezerva.id %> " method="POST">
 <div class="booking-form">
 <div class="input-grp">
 <label>Horário do Check-in</label>
@@ -41,8 +39,11 @@
 <option value="3">Area Vip</option>
 </select>
 </div>
+
+<!-- Typeof aqui -->
+
 <div class="input-group my-1">
-<button type="button" class="btn- btn-primary flight">Rezervar</button>
+<button type="submit" class="btn- btn-primary flight">Rezervar</button>
 </div>
 
 </div>
@@ -79,14 +80,18 @@
   </div>
   
   <div class="input-group my-1">
-  <button type="button" class="btn- btn-primary flight">Confirmar</button>
-  </div>
+  <button type="submit" class="btn- btn-primary flight">Confirmar</button>
+</div>
   
-  </div>
-  </div>
-  </div>
- 
+</div>
+</div>
+</div>
+
 </form>
+</section>
+</main>
+ 
+<!-- </form> -->
 </section>
 </main>
  

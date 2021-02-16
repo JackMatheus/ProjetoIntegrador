@@ -1,17 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* retornando formulario de restaurant */
-router.get('/', function(req, res, next) {
+const UserController = require('../controllers/UserController');
 
-    res.send('respond with a resource');
-  });
-
-  router.get('/:nome'), function(req, res, next){
-   let nome = req.params.nome;
-
-   res.send('Olá');
-  });
+/* retornando formulario de cadastro de usuarios */
+router.get('/create', UserController.create);
 
 
 module.exports = router;
