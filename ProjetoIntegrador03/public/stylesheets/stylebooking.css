@@ -36,23 +36,28 @@
   }
 
   .col-sm-12.col-md-6 {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: 1rem;
 }
 
 .row.ml-5 {
     position: relative;
-    margin-top: 2%;
+    margin-top: 1rem;
+}
+
+.ul {
+    /* margin-top: 1.5rem;
+    margin-bottom: 1rem; */
 }
 
 
 .cocobambu{
     margin-top: auto;
     -webkit-box-shadow: -5px -10px 30px #900, 6px 9px 15px rgba(219, 114, 15, 0.774); 
-    max-width: 30%; 
-    margin-left: 35%;
+    max-width: 40%; 
+    margin-left: 32%;
     position: relative;
-    margin-top: 3%;
+    margin-top: 4%;
     /* height: 30px; */
 }
 
@@ -60,7 +65,7 @@
     justify-content: center;
     font-weight: bold;
     margin-inline: auto;
-    font-size: 400%;
+    font-size: min(65px,4vw);
 }
 
 .gastronomia {
@@ -73,9 +78,19 @@
     
 }
 
+/* como chegar */
+iframe {
+    /* margin-left: 80%; */
+    margin-top: -7%;
+    
+}
+
 li {
     margin-left: 4%;
+    margin-top: 5%;
 }
+
+
 
 
 /* reserva e pagamento */
@@ -222,3 +237,17 @@ box-shadow: none !important;
     font-weight: bold;
 }
 
+
+/* fotos */
+.img.responsive.center-block {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#altura1 {
+    width: 90%;
+}
+
+#altura3 {
+    /* width: 110%; */
+}
