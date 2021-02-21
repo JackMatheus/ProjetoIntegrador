@@ -5,5 +5,10 @@
 module.exports = {
   create(req, res, next){
     res.render('create-user');
+  },
+ 
+  login(req, res, next){
+    res.render('login');
   }
+
 }

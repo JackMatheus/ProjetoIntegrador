@@ -1,8 +1,94 @@
-<%- include('./partials/head'); %> 
-  <%- include('./partials/headerclean'); %> 
+<%- include('./partials/headcreate'); %> 
+<%- include('./partials/headerclean'); %> 
+  
   <main class="container">
     <section class="mt-3" id="users">
-      <h1>Cadastro de Usuários</h1>      
+      <h3  class="text-center">Cadastro de Usuários</h3>
+      <!-- <p>Insira os dados para acessar o sistema</p> -->
+
+      <form action="/users/save" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="row col-12">
+            <div class="col-10">
+            <label for="input-nome">Nome</label>
+            <input type="text" class="form-control" name="name" id="input-nome" placeholder="Insira seu nome">
+            </div>
+            <div class="col-2 mt-4">
+            <button type="submit " class="btn btn-second ml-5">Editar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <div class="row col-12">
+          <div class="col-10">
+            <label for="input-nome">Celular</label>
+            <input type="text" class="form-control" name="celular" id="input-celular" placeholder="Insira seu celular">
+          </div>
+          <div class="col-2 mt-4">
+          <button type="submit " class="btn btn-second ml-5">Editar</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-endereco">Endereço</label>
+          <input type="text" class="form-control" name="endereco" id="input-endereco" placeholder="Insira se endereço">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-endereco">Suas Reservas</label>
+          <input type="text" class="form-control" name="rezervas" id="input-rezervas" placeholder="Histórico de reservas">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-email">E-mail</label>
+          <input type="email" class="form-control" name="email" id="input-email" placeholder="Email@exemplo.com">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-senha">Senha</label>
+          <input type="password" class="form-control" name="password" id="input-senha" placeholder="Insira sua senha">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
+
+    </div>
+        <% if (typeof added !== "undefined") { %>
+          <div class="form-group col-md-12 alert alert-success">
+            Usuário cadastrado com sucesso
+          </div>
+        <% } %> 
+        <button type="submit" class="btn btn-primary mt-1 mb-2 ml-3">Enviar</button>
+      </form>
     </section>
   </main>
   <%- include('./partials/footer'); %> 

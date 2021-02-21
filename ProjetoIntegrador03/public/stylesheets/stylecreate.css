@@ -1,0 +1,114 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/* HEADER */
+
+.container00{
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link{
+color: rgb(0, 0, 0) !important;
+font: times news roman, serif ;
+font-weight: bold;
+/* font-size: 1rem; */
+padding:2%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .8rem;
+  padding-left: .8rem;
+}
+
+.navbar-nav.ml-auto {
+  text-align: center;
+  display: inline-block;
+ 
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: min(20px,2vw);
+  /* font-size: 100%; */
+  
+}
+
+.img-responsive {
+  max-width: 70%;
+}
+
+.text-center {
+  font-weight: bold;
+  font-size: max(25px,2vw);
+}
+
+.form-control: focus {
+  /* outline: none;
+  color:aliceblue; */
+  /* border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none; */
+}
+
+/* textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}  */
+
+
+
+/* botoes */
+.btn.btn-second.ml-5 {
+    color: blue;
+    /* font-weight: lighter; */
+}
+
+
+
+/* footer */
+.footer {
+  color: rgb(201, 99, 99);
+  background-color: black;
+} 
+
+footer.footer {
+  height: auto;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: max(12px, 1vw);
+  padding: 2%;
+}
+
+footer {
+  height: 100px;
+}
+
+footer .icons {
+  font-size: 200%;
+  font-size: min(20px,2vw);
+} 
+
+#users {
+  /* height: 448px; */
+  /* height: calc(470vh-100px); */
+}
+
+.bg-light {
+  /*   */
+  height: 4rem;} 
+
+  .img-responsive {
+      width: 60%;
+  }
