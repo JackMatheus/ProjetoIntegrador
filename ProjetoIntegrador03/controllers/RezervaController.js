@@ -19,6 +19,14 @@ module.exports = {
       // Metodo Post do agendamento
       save (req, res, next) {
         // console.log(req.body);
+        // criando um id sequncial, obtendo a quantidade de elementos no array recipes e somando +1 (correção)
+          // let rezerva = {id, ...req.body};
+          // let id = req.params.id;
+          // rezerva = rezervas.find(rezerva => rezerva.id == id);
+          // if (rezerva.id==id){
+          // let id = rezervas.length +1;}else{};
+         
+        // console.log(req.body);
         // criando um id sequncial, obtendo a quantidade de elementos no array recipes e somando +1
         let id = rezervas.length +1;
         // (if) rezerva.id==id, a resolver 
@@ -77,7 +85,7 @@ module.exports = {
           
         // 2 formar de remover um elemento do json
          let rezervasFilter = rezervas.filter(rezerva => rezerva.id != id);
-         console.log(rezervasFilter);
+        //  console.log(rezervasFilter);
          
         //excecutando funcao que salva alteraçoes dos registros no arquivo rezerva.js
         // primeiro paramento (array rezervas) segundo paramento(o nome do arquivo rezervas.js)
@@ -87,4 +95,3 @@ module.exports = {
 
         }
     }
-
