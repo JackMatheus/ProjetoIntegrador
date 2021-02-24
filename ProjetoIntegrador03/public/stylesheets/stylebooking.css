@@ -48,6 +48,15 @@
 .ul {
     /* margin-top: 1.5rem;
     margin-bottom: 1rem; */
+
+}
+
+img.img-responsive2.cocofoot {
+    max-width: 100%;
+}
+
+.puro {
+    font-size: min(18px, 2vw);
 }
 
 
