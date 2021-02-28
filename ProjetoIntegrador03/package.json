@@ -11,6 +11,7 @@
     "debug": "~2.6.9",
     "ejs": "^2.6.2",
     "express": "~4.16.1",
+    "express-session": "^1.17.1",
     "express-validator": "^6.10.0",
     "file-system": "^2.2.2",
     "http-errors": "^1.8.0",

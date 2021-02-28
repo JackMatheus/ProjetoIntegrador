@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-// const session = require('express-session');
+const session = require('express-session');
 
 var indexRouter = require('./routes/index');
 //1-Criando rota users e restaurants
@@ -19,6 +19,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(session({secret:'sessao do sistema rezerva'}))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

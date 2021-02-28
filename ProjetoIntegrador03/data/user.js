@@ -1,0 +1,1 @@
+module.exports = [{},{"id":2,"nome":"a","celular":"1233333","email":"novo@novo.com","cep":"12","logradouro":"12","complemento":"12","cidade":"1","estado":"1","senha":"$2b$10$c.Jfe7lQf7sG62NjyFJx..TnFyiSp3A5NtNrXxZRmrIzVRfjt1e1."}]

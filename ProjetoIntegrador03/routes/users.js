@@ -10,6 +10,7 @@ const UserController = require('../controllers/UserController');
 router.get('/create', UserController.create);
 router.post('/create', UserController.salve);
 
+
 router.get('/login', UserController.login);
 
 
