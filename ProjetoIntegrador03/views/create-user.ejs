@@ -13,30 +13,30 @@
 </div>
 <div class="container">
   <div class="row form-text col-auto">
-    <form action="">
-      <label for="name" class="form-label">Nome completo*</label>
-      <input type="text" class="form-control" id="name">
+    <form action="/users/create" method="POST">
+      <label for="nome" class="form-label">Nome completo*</label>
+      <input type="text" name="nome" class="form-control" id="nome">
       <!-- <br> -->
       <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
       <label for="celular" class="form-label">Celular*</label>
-      <input type="number" class="form-control" id="celular">
+      <input type="number" name="celular" class="form-control" id="celular">
 
       <label for="email" class="form-label">E-mail*</label>
-      <input type="email" class="form-control" id="email">
+      <input type="email" name="email" class="form-control" id="email">
       <br>
       <div class="form-text"><strong>Endereço completo</strong></div>
       <br>
       <label for="cep" class="form-label">CEP*</label>
-      <input type="number" class="form-control" id="cep">
+      <input type="number" name="cep" class="form-control" id="cep">
 
       <label for="logradouro" class="form-label">Logradouro*</label>
-      <input type="text" class="form-control" id="logradouro">
+      <input type="text" name="logradouro" class="form-control" id="logradouro">
 
       <label for="complemento" class="form-label">Complemento</label>
-      <input type="number" class="form-control" id="cep">
+      <input type="number" name="complemento" class="form-control" id="cep">
 
       <label for="cidade" class="form-label">Cidade</label>
-      <select class="form-select form-floating form-control col-auto" id="cidade" aria-label="Floating label select example">
+      <select class="form-select form-floating form-control col-auto" name="cidade" id="cidade" aria-label="Floating label select example">
         <option selected>Informa sua cidade</option>
         <option value="1">Salvador</option>
         <option value="2">São Paulo</option>
@@ -44,7 +44,7 @@
       </select>
 
       <label for="estado" class="form-label">Estado</label>
-      <select class="form-select form-floating form-control col-auto" id="estado" aria-label="Floating label select example">
+      <select class="form-select form-floating form-control col-auto" name="estado" id="estado" aria-label="Floating label select example">
         <option selected>Informa seu estado</option>
         <option value="1">Bahia</option>
         <option value="2">São Paulo</option>
@@ -56,7 +56,7 @@
       <br>
 
       <label for="senha" class="form-label">Senha</label>
-      <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
+      <input type="password" name="senha" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
       <div id="passwordHelpBlock" class="form-text">
         Sua senha deve conter, no mínimo, 4 caracteres.
       </div>
