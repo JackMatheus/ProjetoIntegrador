@@ -27,15 +27,14 @@
           </tr>
         </thead>
         <tbody>  
-          <% rezervas.forEach(rezerva => { %>         
+          <% rezervas.forEach(rezerva => { %>     
             <tr>
               <th scope="row"><%= rezerva.id %> </th>
-              <td><%= rezerva.Horario%> </td>
+              <td><%= rezerva.Horario %> </td>
               <td><%= rezerva.Data %> </td>
-              <td><%= rezerva.Adulto%> </td>
-              <td><%= rezerva.Crianca%> </td>
-              <td><%= rezerva.Setor%> </td>
-
+              <td><%= rezerva.Adulto %> </td>
+              <td><%= rezerva.Crianca %> </td>
+              <td><%= rezerva.Setor %> </td>
               <td>
                 <a href="/rezervas/edit/<%= rezerva.id %>">
                   <i class="fas fa-edit"></i>

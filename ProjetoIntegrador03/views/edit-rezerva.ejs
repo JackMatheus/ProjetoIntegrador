@@ -9,11 +9,11 @@
 <div class="booking-form-box">
 
 <h3 class="ml-1">Altere sua rezerva</h3>
-<form action="/rezervas/update <%= rezerva.id %> " method="POST">
+<form action="/rezervas/update/<%= rezerva.id %> " method="POST">
 <div class="booking-form">
 <div class="input-grp">
 <label>Horário do Check-in</label>
-<input type="time" class="form-control" value="<%= rezerva.Horario %>" name="horario" id="horario">
+<input type="time" class="form-control" value="<%= rezerva.Horario %>" name="Horario" id="Horario">
 </div>
 
 <div class="input-grp">
@@ -81,17 +81,18 @@
   
   <div class="input-group my-1">
   <button type="submit" class="btn- btn-primary flight">Confirmar</button>
-</div>
-  
-</div>
-</div>
-</div>
+  </div>
+    
+  </div>
+  </div>
+  </div>
 
 </form>
 </section>
-</main>
- 
+</main> 
 <!-- </form> -->
+
+
 </section>
 </main>
  
