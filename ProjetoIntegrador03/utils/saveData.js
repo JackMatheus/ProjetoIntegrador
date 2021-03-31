@@ -9,7 +9,7 @@ const saveData = (array, fileName) =>{
 
     //obter o caminho ate o aquivo data/restaurants.js
     let filePath = path.join('data', fileName);
-    // console.log(filePath);      
+          
 
 
     //escrever no arquivo restaurant.js
