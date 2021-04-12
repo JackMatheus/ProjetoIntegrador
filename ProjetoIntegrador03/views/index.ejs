@@ -17,8 +17,7 @@
     </section> 
 
      <!-- section 2 - referencia palavra - rezerva  -->  
-          <!-- nota: element representa cada card -->
-          <!-- <%= %>tag para imprimir um valor no ejs -->
+       
     <div class="general">
     <div class="container2 col-12">      
     <div class="col-lg-12">
@@ -28,13 +27,14 @@
     <!-- nota: para pegar a imagem (objeto=>card + caminho da imagem) -->
      <% cards.forEach(card => {%> 
       <!-- <div class="col-lg-12"> -->
-        
+
              <div class="col sm-2 col-md-6 col-lg-3 mt-1">
-              <div class="card" style ="">
+              <div class="card">
                 <img src="<%= card.caminho_de_imagem %> " class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><%= card.titulo %> </h5>
-                  <p class="card-text"><%= card.texto %></p>                      
+                  <p class="card-text"><%= card.texto %></p> 
+                  <!-- <a href="/restaurants" class="btn btn-second ml-auto" role="button">Visitar</a>                      -->
                 </div>
               </div>
             </div> 
@@ -48,7 +48,6 @@
       </div>   
       </div>          
 
-
   <!-- section 3 - referencia palavra - Cadastre -->
   <section class="container3">   
     <div class="row">
@@ -60,7 +59,7 @@
       <div class="text-center">É simples e prático: clique no botão abaixo e preencha os <br> dados. Dentro de poucos minutos sua página já estará no ar e <br>você poderá divulgar em todos os canais de comunicação mais conhecidos</div>
       </div>
 
-      <div class="botaocadastre ml-auto">
+      <div class="botaocadastre ml-auto mr-auto">
       <button type="submit" class="btn btn-third">Cadastre-se</button>
       </div>
     </section>
@@ -69,56 +68,35 @@
   <section class="container4 col-12 ml-auto"> 
 
   <form action="/restaurants">
-  <div class="row">
+  <div class="row mb-3">
   <div class="col-12 my-5">
   <h1 class="text-center text-white font-weight: bold" >O que os clientes <br> estão dizendo</h1>
   </div>
-  
-  <div class="row">
-  <div class="amandaprincipal col-12">
-  <img src="/images/foto-rest-tais.jpg" class="clientes4" alt="...">
-  <div class="amandatexto col-9 ml-3">
-  <h5 class="amanda">  Amanda Justino</h5>    
-  <h5 class="amandarmassa">"O restaurante é massa <br>o rezerva facilitou muito o nosso trabalho! Nos permitiu criar um banco de dados de todos os nossos clientes"</h5>
-  </div>
-  </div>
-  <!-- </div> -->
 
-  <!-- <div class="row"> -->
-    <div class="amandaprincipal col-lg-12 mt-3">
-      <img src="/images/foto-rest-tais.jpg" class="clientes4" alt="...">
-      <div class="amandatexto col-9 ml-3">
-      <h5 class="amanda">  Amanda Justino</h5>    
-      <h5 class="amandarmassa">"O restaurante é massa <br>o rezerva facilitou muito o nosso trabalho! Nos permitiu criar um banco de dados de todos os nossos clientes"</h5>
-    </div>
-    </div>
-    <!-- </div> -->
+     <% amandas.forEach(amanda => {%> 
+              <div class="amandaprincipal col-9 ml-auto mr-auto mt-3">
+                <img src="<%= amanda.caminho_de_imagem %> " class="clientes4" alt="...">  
+                <div class="amandatexto col-9 ml-3">
+                  <h5 class="amanda"><%= amanda.titulo %> </h5>
+                  <p class="amandarmassa"><%= amanda.texto %></p>                      
+                </div>           
+              </div>                               
 
-    <!-- <div class="row"> -->
-      <div class="amandaprincipal col-lg-12 mt-3">
-        <img src="/images/foto-rest-tais.jpg" class="clientes4" alt="...">
-        <div class="amandatexto col-9 ml-3">
-        <h5 class="amanda">  Amanda Justino</h5>    
-        <h5 class="amandarmassa">"O restaurante é massa <br>o rezerva facilitou muito o nosso trabalho! Nos permitiu criar um banco de dados de todos os nossos clientes"</h5>
-      </div>
-      </div>
-    
-  <!-- aqui -->
-  <div class="botaocadastre ml-auto">
+      <% })%>
+
+  <!-- <div class="botaocadastre ml-auto">
   <button type="submit" class="btn btn-third">Rezervar</button>
-  <!-- <div class="nav-item restaurants">
-  <a href="/restaurants" class="nav-link">--------</a> -->
-  </div>
+  </div> -->
   </form>
 
   </section>
   </div>    
  
-
-     
 </main>
   <!-- area footer -->
   <%- include('./partials/footer'); %> 
   </body>
 
 </html>
+
+

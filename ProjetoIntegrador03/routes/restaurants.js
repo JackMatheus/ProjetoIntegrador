@@ -8,10 +8,11 @@ const RestaurantController = require('../controllers/RestaurantController');
 /* GET home page. */
 // (RestaurantController.index)rota vs oque quer que aconteça quando a rota for processada;
 router.get('/', RestaurantController.index )
+
+// 2 - nova rota das mesas
+// (RestaurantController.mesa)rota vs oque quer que aconteça quando a rota for processada; (?)
+router.get('/restaurants/areas', RestaurantController.areas )
 // Para acessar
 // localhost:3000/restaurants
-
-// POST salvar rezerva
-// router.post('/save', RestaurantController.save);
 
 module.exports = router;

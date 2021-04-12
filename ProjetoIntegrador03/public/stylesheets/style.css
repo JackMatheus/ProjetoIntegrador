@@ -129,7 +129,7 @@ margin: 0 auto;
     font-size: 2rem;
     position: relative;
     display: flex;
-    text: white
+    /* text: white;  */
 }
 
 
@@ -188,7 +188,7 @@ h3.text-center{
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: 2%;
+  margin-left: 8%;
 }
 
 .amandaprincipal{
@@ -244,6 +244,10 @@ footer .icons {
     font-size: min(20px,2vw);
   }
 
+  /* a.btn.btn-second.ml-auto {
+    margin-right: auto;
+} */
+
 button.btn.btn-third {
   background-color: rgb(64, 168, 32);
   font-weight: bold; 
@@ -252,7 +256,7 @@ button.btn.btn-third {
 
 }
 .botaocadastre{
-margin-right: 45%;
+margin-right: 49%;
 margin-top: 2%;
 margin-bottom: 1%;
 }

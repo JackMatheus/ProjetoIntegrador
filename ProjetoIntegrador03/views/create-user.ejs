@@ -1,95 +1,96 @@
 <%- include('./partials/headcreate'); %> 
 <%- include('./partials/headerclean'); %> 
   
-<div class="container">
-  <div class="row">
-    <div class="col-auto text-center">
-      <h2>
-        Preencha os dados abaixo para realizar seu cadastro
-      </h2>
-    </div>
-  </div>
-  
-</div>
+  <main class="container">
+    <section class="mt-3" id="users">
+      <h3  class="text-center">Cadastro de Usuários</h3>
+      <!-- <p>Insira os dados para acessar o sistema</p> -->
 
-<% if (typeof user !== "undefined") { %>
-  <div class="modal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Usuário cadastrado com sucesso!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <form action="/users/save" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="row col-12">
+            <div class="col-10">
+            <label for="input-nome">Nome</label>
+            <input type="text" class="form-control" name="name" id="input-nome" placeholder="Insira seu nome">
+            </div>
+            <div class="col-2 mt-4">
+            <button type="submit " class="btn btn-second ml-5">Editar</button>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>Agora você poderá realizar sua reserva
 
-            Se você for dono de restaurante, configure agora a página do seu estabelecimento. </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="form-group col-md-12">
+          <div class="row col-12">
+          <div class="col-10">
+            <label for="input-nome">Celular</label>
+            <input type="text" class="form-control" name="celular" id="input-celular" placeholder="Insira seu celular">
+          </div>
+          <div class="col-2 mt-4">
+          <button type="submit " class="btn btn-second ml-5">Editar</button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <% } else { %>
-<div class="container">
-  <div class="row form-text col-auto">
-    <form action="/users/create" method="POST">
-      <label for="nome" class="form-label">Nome completo*</label>
-      <input type="text" name="nome" class="form-control" id="nome">
-      <!-- <br> -->
-      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-      <label for="celular" class="form-label">Celular*</label>
-      <input type="number" name="celular" class="form-control" id="celular">
 
-      <label for="email" class="form-label">E-mail*</label>
-      <input type="email" name="email" class="form-control" id="email">
-      <br>
-      <div class="form-text"><strong>Endereço completo</strong></div>
-      <br>
-      <label for="cep" class="form-label">CEP*</label>
-      <input type="number" name="cep" class="form-control" id="cep">
 
-      <label for="logradouro" class="form-label">Logradouro*</label>
-      <input type="text" name="logradouro" class="form-control" id="logradouro">
-
-      <label for="complemento" class="form-label">Complemento</label>
-      <input type="number" name="complemento" class="form-control" id="cep">
-
-      <label for="cidade" class="form-label">Cidade</label>
-      <select class="form-select form-floating form-control col-auto" name="cidade" id="cidade" aria-label="Floating label select example">
-        <option selected>Informa sua cidade</option>
-        <option value="1">Salvador</option>
-        <option value="2">São Paulo</option>
-        <option value="3">Porto Alegre</option>
-      </select>
-
-      <label for="estado" class="form-label">Estado</label>
-      <select class="form-select form-floating form-control col-auto" name="estado" id="estado" aria-label="Floating label select example">
-        <option selected>Informa seu estado</option>
-        <option value="1">Bahia</option>
-        <option value="2">São Paulo</option>
-        <option value="3">Rio Grande do Sul</option>
-      </select>
-
-      <br>
-      <div class="form-text"><strong>Defina uma senha</strong></div>
-      <br>
-
-      <label for="senha" class="form-label">Senha</label>
-      <input type="password" name="senha" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
-      <div id="passwordHelpBlock" class="form-text">
-        Sua senha deve conter, no mínimo, 4 caracteres.
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-endereco">Endereço</label>
+          <input type="text" class="form-control" name="endereco" id="input-endereco" placeholder="Insira se endereço">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
       </div>
 
-      <br>
-      <button type="submit" class="btn btn-primary btn-lg mx-auto">Criar conta </button>
-      <br>
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-endereco">Suas Reservas</label>
+          <input type="text" class="form-control" name="rezervas" id="input-rezervas" placeholder="Histórico de reservas">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
 
-    </form>
-  </div>
-  <% } %>
-</div>  
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-email">E-mail</label>
+          <input type="email" class="form-control" name="email" id="input-email" placeholder="Email@exemplo.com">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
 
+      <div class="form-group col-md-12">
+        <div class="row col-12">
+        <div class="col-10">
+          <label for="input-senha">Senha</label>
+          <input type="password" class="form-control" name="password" id="input-senha" placeholder="Insira sua senha">
+        </div>
+        <div class="col-2 mt-4">
+        <button type="submit " class="btn btn-second ml-5">Editar</button>
+        </div>
+      </div>
+      </div>
+
+    </div>
+        <% if (typeof added !== "undefined") { %>
+          <div class="form-group col-md-12 alert alert-success">
+            Usuário cadastrado com sucesso
+          </div>
+        <% } %> 
+        <button type="submit" class="btn btn-primary mt-1 mb-2 ml-3">Enviar</button>
+      </form>
+    </section>
+  </main>
   <%- include('./partials/footer'); %> 
+</body>
+</html>

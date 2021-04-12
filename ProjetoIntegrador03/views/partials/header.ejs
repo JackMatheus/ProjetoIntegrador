@@ -1,21 +1,13 @@
-
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   
   <div class="container-fluid">
     <div class="container00 col-2"> 
-    <img src="/images/logo-rezerva.jpg"  class="img-responsive" alt="Logo"> 
+    <img src="/images/logo-rezerva.jpg"  class="img-responsive" alt="Logo">     
     </div>
     <!-- >>>>>>>>>>>>>>>
     <div class="collapse navbar-collapse" id="navbarNav"> -->
       <ul class="navbar-nav ml-auto">
-        <% if (typeof user !== "undefined") { %>
-          <li class="nav-item">
-            <a href="" class="nav-link">Olá, <%= user %></a>
-          </li>
-          <li class="nav-item">
-            <a href="/users/logout" class="nav-link">Sair</a>
-          </li>
-        <% } else { %>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/#Vantagens">Vantagens</a>
         </li>
@@ -25,16 +17,11 @@
         <li class="nav-item">
           <a class="nav-link" href="users/create">Reviews</a>
         </li>
-        <% } %>
-      </ul>
-      
-      <a href="users/login" class="btn btn-primary" role="button">Login</a>
-     
-
-
-  </div>
-    
+      </ul>      
+      <a href="users/login" class="btn btn-primary" role="button">Login</a>   
+    </div>    
 </nav>
+
 
   
 

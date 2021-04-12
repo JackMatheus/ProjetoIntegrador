@@ -1,4 +1,5 @@
 //Segunda etapa
+//Apos testes finais deletar
 const fs = require("fs");
 const path = require ("path");
 
@@ -7,15 +8,13 @@ const path = require ("path");
 
 module.exports = {
     index (req, res, next) {
-        // problema aqui ao fazer o console.log
-        // console.log(cards);
-        //teste renderizar para o front localhost 3000
-        //res.json(cards)
-        //Como fazer para reenderizar para o front ( res.render a view => index.ejs)
-       
+ 
         res.render('restaurants');
-        //                    Cards: Propriedade x Valor (problema1)
-        // res.render('restaurants', {restaurants: restaurants});
+
+      },
+
+      areas (req, res, next) {
+        res.render('areas');
       }
      
     }

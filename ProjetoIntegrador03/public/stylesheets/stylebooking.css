@@ -36,7 +36,7 @@
   }
 
   .col-sm-12.col-md-6 {
-    /* margin-top: 1rem; */
+    
     padding: 1rem;
 }
 
@@ -139,7 +139,7 @@ border-radius: 50%;
 .radio-btn .btn: checked::after {
     content:'';
     background-color: #000;
-    transition: 0,5s;
+    transition: 0,5s
 }
 
 .radio-btn span{

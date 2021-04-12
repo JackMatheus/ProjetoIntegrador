@@ -1,0 +1,61 @@
+
+<%- include('./partials/headcreate'); %> 
+<%- include('./partials/headerclean'); %> 
+
+ <!-- Importante: importando o main.js no Html -->
+ <script src="./assets//js/main.js" defer></script>
+
+<!-- <div>
+  <h1 class="text-center">Layout do restaurante</h1>
+</div> -->
+
+ <!-- MesaDisponivel -->
+ <!-- pazer repedir as mesas disponiveis -->
+ <!-- let MesaDisponivel = mesa; -->
+ <!-- <a href="#" class="btn btn-primary">rezervar</a> -->
+<!-- substituir por EventListener onmouse -->
+<!-- <% mesas.forEach(mesa => { %>
+<div class="col-12 col=md-6 col-lg-4 mt-4">
+<div class="MesaDisponivel" style ="">
+<img src="<%= mesa.caminho_de_imagem %> " class="" alt="...">
+<div class="card-body">
+</div>  
+</div>
+</div>
+<% }) %> -->
+
+
+<!-- outa forma de se pensar é repetindo a mesma figura -->
+
+    <body>
+        <h1 class="text-center">Layout do restaurante</h1>
+        <br>
+
+        <form>
+        <div class="imagens d-flex" id="status">   
+                <div>
+                    <img src="/images/MesaDisponivel.jpg" class="img-responsive MD" alt="verde" id="verde"> 
+                </div>                  
+            
+                <br>
+                <div>
+                    <img src="/images/AreaRestaurante.jpg" class="img-responsive MD" alt="area" id="area"> 
+                </div> 
+
+                <!-- utilizar position relative e absolite para reposicionar as figuras -->
+                <!-- utilizar calc -->
+
+
+                <!-- <div>
+                    <img src="/images/MesaAguardandoConfirmacao.jpg" class="img-responsive MAC" alt="amarela"  id="amarela"> 
+                </div>
+                <br>   
+                <div>
+                  <img src="/images/MesaRezervada.jpg" class="img-responsive MR" alt="cinza-imagem alterada por JS" id="cinza"> 
+                </div>      -->
+        </div>
+    </form>
+    
+    </body>
+</html>
+
