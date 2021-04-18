@@ -11,7 +11,7 @@ module.exports = {
     // let id = users.length + 1;
     /*  criptografando a senha */
     req.body.password = bcrypt.hashSync(req.body.password, 10);
-    // let users = await Usuario.findAll(); 
+    let users = await Usuario.findAll();     
 
     /* criando objeto para enviar adicionar no array users */
     let usuario = {...req.body};
@@ -20,12 +20,10 @@ module.exports = {
     
     /* adicionando objeto dentro do array users */
    await Usuario.create(usuario);
-    // console.log(usuario)
-    // return
-    
-    // 1- reendirizando para a view de login
-    // res.render('create-user', { added: true }); 
-    res.render('login', { added: true });
+   
+    /* cadastrando no arquivo user.js que sera nosso json de usuarios */
+    // saveData(users, 'user.js');    
+    res.render('create-user', { added: true });
   },
 
   login(req, res, next){
@@ -37,21 +35,21 @@ module.exports = {
     let user = await Usuario.findOne({ where: { email } });
     // console.log(user)
     // return
-    if(!user){
-    return res.render('login/authenticate', { notFound: true });
-    }
+    // if(!user){
+    // return res.render('login/authenticate', { notFound: true });
+    // }
 
-    if(!bcrypt.compareSync(password, user.password)){
-    return res.render('login/authenticate', { notFound: true });
-    }
+    // if(!bcrypt.compareSync(password, user.password)){
+    // return res.render('login/authenticate', { notFound: true });
+    // }
     
     // removendo o valor propriedade password para que o usuario logado nao trafegue com sua senha
-    user.password = undefined; 
+    user.password = undefined;
 
     // criando sessao contendo informacoes do usuario que ira se logar
     req.session.user = user;
 
-    res.redirect('/');
+    res.redirect('/rezervas');
   },
 
   logout(req, res, next){

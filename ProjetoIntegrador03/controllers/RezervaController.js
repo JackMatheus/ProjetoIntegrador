@@ -5,25 +5,26 @@ var router = express.Router();
 const mesas = require('../data/mesa');
 const moment = require("moment");
 const fs = require ("fs");
-// console.log(moment().format('DD/MM/YYYY'))
-// return
 
 module.exports = {
     async rezerva (req, res, next) {
-      let rezervas = await Rezerva.findAll(); // s42 t-55 - modulo Rezerva - buscando informação banco de dados
-
+      let rezervas = await Rezerva.findAll(); 
+      // s42 t-55 - modulo Rezerva - buscando informação banco de dados
+      // console.log(rezervas)
+      // return                  //cada evento de rezerva ?
+        rezervas = rezervas.map(function(value){
+          let day = value.Data.getDate();
+          let month = value.Data.getMonth()+1;
+          let year = value.Data.getFullYear();          
+          value.DataString = day + "/" + month + "/" + year;          
+          
+          return value
+        })
         res.render('rezervas', {rezervas, rezervas});
       },
 
         async save (req, res, next) {
-        // let {Data} = {...req.body};
-        // Data = new Date();
-        // Data = Data.getDate() + "/" + (Data.getMonth() + 1) + "/" + Data.getFullYear();
-        // console.log(Data)
-        // return  
-        let rezerva = {...req.body};   
-        // console.log(rezerva)
-        // return  
+        let rezerva = {...req.body};
         await Rezerva.create(rezerva);
         res.redirect('/rezervas');
         },
