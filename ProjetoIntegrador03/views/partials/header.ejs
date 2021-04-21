@@ -5,9 +5,9 @@
     <div class="container00 col-2"> 
     <img src="/images/logo-rezerva.jpg"  class="img-responsive" alt="Logo">     
     </div>
-    <!-- >>>>>>>>>>>>>>>
-    <div class="collapse navbar-collapse" id="navbarNav"> -->
+    
       <ul class="navbar-nav ml-auto">
+        <% if (typeof user == "undefined") { %>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/#Vantagens">Vantagens</a>
         </li>
@@ -17,9 +17,22 @@
         <li class="nav-item">
           <a class="nav-link" href="users/create">Reviews</a>
         </li>
+        
       </ul>      
-      <a href="users/login" class="btn btn-primary" role="button">Login</a>   
-    </div>    
+      <a href="users/login" class="btn btn-primary" role="button">Login</a>
+      <% } else {%>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="" class="nav-link">Olá, <%= user.name %></a>
+            </li>
+            <li class="nav-item">
+              <a href="/users/logout" class="nav-link">Sair</a>
+            </li>
+          <% }  %> 
+    </div> 
+    
+    
+
 </nav>
 
 

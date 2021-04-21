@@ -40,6 +40,11 @@
         <% } %> 
         <button type="submit" class="btn btn-primary mt-1 mb-2 ml-3">Login</button>
       </form>
+      <% if (typeof notFound !== "undefined") { %>
+        <div class="form-group col-md-12 alert alert-danger">
+          E-mail ou senha inválidos
+        </div>
+      <% } %> 
     </section>
   </main>
   <%- include('./partials/footer'); %> 
