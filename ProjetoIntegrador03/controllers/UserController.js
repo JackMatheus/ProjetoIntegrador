@@ -11,7 +11,8 @@ module.exports = {
     // let id = users.length + 1;
     /*  criptografando a senha */
     req.body.password = bcrypt.hashSync(req.body.password, 10);
-    let users = await Usuario.findAll();     
+    //let users = await Usuario.findAll();  
+    console.log(req.body.password)   
 
     /* criando objeto para enviar adicionar no array users */
     let usuario = {...req.body};
