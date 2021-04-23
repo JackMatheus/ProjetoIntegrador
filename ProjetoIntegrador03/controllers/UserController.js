@@ -1,6 +1,7 @@
 // const {usuario} = require ('../models');
 const {Usuario} = require ('../models');
 const bcrypt = require('bcrypt');
+const {Rezerva} = require ('../models');
 
 module.exports = {
   create(req, res, next){
@@ -34,6 +35,7 @@ module.exports = {
   async authenticate(req, res, next){
     let { email, password } = req.body;
     let user = await Usuario.findOne({ where: { email } });
+    let rezervas = await Rezerva.findAll(); 
     
     if(!user){
     return res.render('login', { notFound: true });
@@ -47,9 +49,11 @@ module.exports = {
     user.password = undefined;
 
     // criando sessao contendo informacoes do usuario que ira se logar
-    req.session.user = user;
-
-    res.redirect('/rezervas');
+     req.session.user = user ;
+     //console.log(user.name)
+    //res.render('index', {user})
+    //res.redirect('/');
+    res.render('rezervas', {user, rezervas})
   },
 
   logout(req, res, next){
