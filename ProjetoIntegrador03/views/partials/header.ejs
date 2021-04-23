@@ -7,7 +7,17 @@
     </div>
     
       <ul class="navbar-nav ml-auto">
-        <% if (typeof(user) == "undefined") { %>
+        
+    <% if (typeof (user) != "undefined") { %>
+      <li class="nav-item">
+        <a href="" class="nav-link">Olá, <%= user.name %></a>
+      </li>
+      <li class="nav-item">
+        <a href="/users/logout" class="nav-link">Sair</a>
+      </li>
+    </ul>
+      <% } else {%>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/#Vantagens">Vantagens</a>
         </li>
@@ -17,21 +27,15 @@
         <li class="nav-item">
           <a class="nav-link" href="users/create">Reviews</a>
         </li>
-        
-      </ul>      
+      </ul>
       <a href="users/login" class="btn btn-primary" role="button">Login</a>
-      <% } else {%>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="" class="nav-link">Olá, <%= user.name %></a>
-            </li>
-            <li class="nav-item">
-              <a href="/users/logout" class="nav-link">Sair</a>
-            </li>
-          <% }  %> 
-    </div> 
-    
-    
+      <% }  %> 
+  </div> 
+        
+      
+          
+
+
 
 </nav>
 
