@@ -1,5 +1,7 @@
-<%- include('./partials/headcreate'); %> 
-<%- include('./partials/headerclean'); %> 
+<%- include('./partials/headcreate'); %>
+<!-- <%- include('./partials/headerclean'); %>  -->
+<%- include('./partials/header'); %>
+  
 
 <link rel='stylesheet' href='stylesheets/stylebooking.css' />
 
@@ -8,7 +10,7 @@
       <!-- <h1>Rezerva</h1> -->
       <p>Confira abaixo a lista de rezervas</p>
   
-      <% if(typeof deleted !== 'undefined'){ %> 
+      <% if(typeof (deleted) !== 'undefined'){ %> 
         <div class="col-md-12 alert alert-success">
           Rezerva excluída com sucesso
         </div>
@@ -53,7 +55,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        Deseja realmente excluir a rezerva <%= rezerva.id%> ? <br><br>
+                        Deseja realmente excluir a rezerva <%= rezerva.id %> ? <br><br>
                         
                       </div>
                       <div class="modal-footer">

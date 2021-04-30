@@ -1,6 +1,7 @@
 // const {usuario} = require ('../models');
 const {Usuario} = require ('../models');
 const bcrypt = require('bcrypt');
+const {Rezerva} = require ('../models');
 
 module.exports = {
   create(req, res, next){
@@ -11,7 +12,8 @@ module.exports = {
     // let id = users.length + 1;
     /*  criptografando a senha TIA*/
     req.body.password = bcrypt.hashSync(req.body.password, 10);
-    let users = await Usuario.findAll();     
+    //let users = await Usuario.findAll();  
+    console.log(req.body.password)   
 
     /* criando objeto para enviar adicionar no array users */
     let usuario = {...req.body};
@@ -33,23 +35,25 @@ module.exports = {
   async authenticate(req, res, next){
     let { email, password } = req.body;
     let user = await Usuario.findOne({ where: { email } });
-    // console.log(user)
-    // return
-    // if(!user){
-    // return res.render('login/authenticate', { notFound: true });
-    // }
+    let rezervas = await Rezerva.findAll(); 
+    
+    if(!user){
+    return res.render('login', { notFound: true });
+    }
 
-    // if(!bcrypt.compareSync(password, user.password)){
-    // return res.render('login/authenticate', { notFound: true });
-    // }
+    if(!bcrypt.compareSync(password, user.password)){
+    return res.render('login', { notFound: true });
+    }
     
     // removendo o valor propriedade password para que o usuario logado nao trafegue com sua senha
     user.password = undefined;
 
     // criando sessao contendo informacoes do usuario que ira se logar
-    req.session.user = user;
-
-    res.redirect('/rezervas');
+     req.session.user = user ;
+     //console.log(user.name)
+    //res.render('index', {user})
+    //res.redirect('/');
+    res.render('rezervas', {user, rezervas})
   },
 
   logout(req, res, next){
