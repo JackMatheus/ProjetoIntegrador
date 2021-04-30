@@ -9,7 +9,7 @@ module.exports = {
 
   async save(req, res, next){
     // let id = users.length + 1;
-    /*  criptografando a senha */
+    /*  criptografando a senha TIA*/
     req.body.password = bcrypt.hashSync(req.body.password, 10);
     let users = await Usuario.findAll();     
 

@@ -53,7 +53,8 @@ module.exports = {
 
         //Salvando a atualização do registro
         await rezerva.save();
-        res.render('edit-rezerva',{rezerva, updated: true});
+        // res.render('edit-rezerva',{rezerva, updated: true});
+        res.redirect('/rezervas');    
         },
 
         async delete (req, res, next){
