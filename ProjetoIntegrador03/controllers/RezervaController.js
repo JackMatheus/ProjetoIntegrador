@@ -20,8 +20,8 @@ module.exports = {
           
         //   return value
         // })
-        //console.log(Rezervas.Horario)
-        res.render('rezervas', {rezervas});
+        
+        res.render('rezervas', {rezervas, user:req.session.user});
       },
 
         async save (req, res, next) {

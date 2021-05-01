@@ -8,7 +8,7 @@ const amandas = require('../data/amanda');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  res.render('index', {cards: cards, amandas: amandas});
+  res.render('index', {cards: cards, amandas: amandas, user:req.session.user});
 });
 
 module.exports = router;

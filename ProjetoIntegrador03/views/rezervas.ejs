@@ -1,14 +1,13 @@
-<%- include('./partials/headcreate'); %>
-<!-- <%- include('./partials/headerclean'); %>  -->
+
 <%- include('./partials/header'); %>
   
 
-<link rel='stylesheet' href='stylesheets/stylebooking.css' />
+<!-- <link rel='stylesheet' href='stylesheets/stylebooking.css' /> -->
 
 <main class="container">
     <section class="mt-3" id="rezervas">
       <!-- <h1>Rezerva</h1> -->
-      <p>Confira abaixo a lista de rezervas</p>
+      <p>Olá <%= user.name %>! Confira abaixo a lista de rezervas</p>
   
       <% if(typeof (deleted) !== 'undefined'){ %> 
         <div class="col-md-12 alert alert-success">

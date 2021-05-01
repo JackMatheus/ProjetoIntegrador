@@ -38,11 +38,13 @@ module.exports = {
     let rezervas = await Rezerva.findAll(); 
     
     if(!user){
-    return res.render('login', { notFound: true });
+      return res.send('nada')
+    //return res.render('login', { notFound: true });
     }
 
     if(!bcrypt.compareSync(password, user.password)){
-    return res.render('login', { notFound: true });
+      return res.send('nada')
+    //return res.render('login', { notFound: true });
     }
     
     // removendo o valor propriedade password para que o usuario logado nao trafegue com sua senha
@@ -52,8 +54,8 @@ module.exports = {
      req.session.user = user ;
      //console.log(user.name)
     //res.render('index', {user})
-    //res.redirect('/');
-    res.render('rezervas', {user, rezervas})
+    res.redirect('/rezervas');
+    //res.render('rezervas', {user, rezervas})
   },
 
   logout(req, res, next){
