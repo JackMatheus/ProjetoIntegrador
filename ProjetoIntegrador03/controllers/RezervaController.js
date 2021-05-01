@@ -18,8 +18,8 @@ module.exports = {
           let year = value.Data.getFullYear();          
           value.DataString = day + "/" + month + "/" + year;          
           
-        //   return value
-        // })
+          return value
+        })
         
         res.render('rezervas', {rezervas, user:req.session.user});
       },

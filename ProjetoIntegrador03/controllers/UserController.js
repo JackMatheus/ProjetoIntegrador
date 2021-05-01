@@ -34,7 +34,7 @@ module.exports = {
   async authenticate(req, res, next){
     let { email, password } = req.body;
     let user = await Usuario.findOne({ where: { email } });
-    let rezervas = await Rezerva.findAll(); 
+    //let rezervas = await Rezerva.findAll(); 
     
     if(!user){
       return res.send('nada')

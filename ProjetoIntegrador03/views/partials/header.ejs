@@ -28,7 +28,17 @@
         <button type="submit" id="btn-search" class="btn btn-search">Pesquisar</button>
       </div>
     </form>
+    <ul class="navbar-nav ml-auto">
+      <% if (typeof(user) != "undefined") { %>
+      <li class="nav-item">
+        <a href="" class="nav-link">Olá, <%= user.name %></a>
+      </li>
+      <li class="nav-item">
+        <a href="/users/logout" class="nav-link">Sair</a>
+      </li>
+    </ul>
     
+    <% } else {%>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/#Vantagens">Vantagens</a>
@@ -40,7 +50,8 @@
           <a class="nav-link" href="#reviews">Reviews</a>
         </li>
       </ul>      
-      <a href="users/login" class="btn btn-primary" role="button">Login</a>   
+      <a href="users/login" class="btn btn-primary" role="button">Login</a>  
+      <% } %> 
     </div>    
 </nav>
 
