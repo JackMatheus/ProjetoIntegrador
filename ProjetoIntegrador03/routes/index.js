@@ -20,7 +20,7 @@ router.get('/search', function(req,res,next){
   // console.log(restaurants);
 
   //back - to Front (no criado)
-  res.render('search', {restaurants})
+  res.render('search', {restaurants, user:req.session.user})
 })
 
 module.exports = router;
