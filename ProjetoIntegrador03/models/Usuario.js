@@ -12,7 +12,7 @@ module.exports = (sequelize, DataType) => {
         endereco: DataType.STRING,
         rezervas: DataType.INTEGER,
         email: DataType.STRING,
-        password: DataType.STRING,
+        password: DataType.INTEGER,
         
 	},{
     tableName: 'usuarios',

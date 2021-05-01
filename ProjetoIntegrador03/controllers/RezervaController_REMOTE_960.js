@@ -18,10 +18,9 @@ module.exports = {
           let year = value.Data.getFullYear();          
           value.DataString = day + "/" + month + "/" + year;          
           
-        //   return value
-        // })
-        
-        res.render('rezervas', {rezervas, user:req.session.user});
+          return value
+        })
+        res.render('rezervas', {rezervas, rezervas});
       },
 
         async save (req, res, next) {

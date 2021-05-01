@@ -1,7 +1,6 @@
 // const {usuario} = require ('../models');
 const {Usuario} = require ('../models');
 const bcrypt = require('bcrypt');
-const {Rezerva} = require ('../models');
 
 module.exports = {
   create(req, res, next){
@@ -10,10 +9,9 @@ module.exports = {
 
   async save(req, res, next){
     // let id = users.length + 1;
-    /*  criptografando a senha TIA*/
+    /*  criptografando a senha */
     req.body.password = bcrypt.hashSync(req.body.password, 10);
-    //let users = await Usuario.findAll();  
-    console.log(req.body.password)   
+    let users = await Usuario.findAll();     
 
     /* criando objeto para enviar adicionar no array users */
     let usuario = {...req.body};
@@ -26,6 +24,7 @@ module.exports = {
     /* cadastrando no arquivo user.js que sera nosso json de usuarios */
     // saveData(users, 'user.js');    
     res.render('create-user', { added: true });
+    res.redirect('/index');
   },
 
   login(req, res, next){
@@ -51,11 +50,9 @@ module.exports = {
     user.password = undefined;
 
     // criando sessao contendo informacoes do usuario que ira se logar
-     req.session.user = user ;
-     //console.log(user.name)
-    //res.render('index', {user})
+    req.session.user = user;
+
     res.redirect('/rezervas');
-    //res.render('rezervas', {user, rezervas})
   },
 
   logout(req, res, next){
