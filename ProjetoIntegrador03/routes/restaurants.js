@@ -15,4 +15,6 @@ router.get('/restaurants/areas', RestaurantController.areas )
 // Para acessar
 // localhost:3000/restaurants
 
+
+
 module.exports = router;

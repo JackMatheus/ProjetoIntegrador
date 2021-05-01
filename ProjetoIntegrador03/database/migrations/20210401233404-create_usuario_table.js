@@ -13,7 +13,7 @@ module.exports = {
       endereco: Sequelize.STRING,
       rezervas: Sequelize.INTEGER,
       email: Sequelize.STRING,
-      password: Sequelize.STRING,
+      password: Sequelize.INTEGER,
       createdAt: Sequelize.DATE,
       updatedAt: Sequelize.DATE,
 

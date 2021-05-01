@@ -255,6 +255,29 @@ button.btn.btn-third {
   font-size: min(20px,2vw);
 
 }
+
+  /* busca */
+button.btn-search {
+max-width: 100%;
+color: rgb(0, 0, 0) !important;
+font: times news roman, serif ;
+font-weight: bold;
+border: #f65d00;
+
+}
+
+input#search {
+  margin-left: -50%;
+  width: 150%;
+}
+/* 
+input.form-control {
+  margin-left: -50%;
+  width: 150%;
+} */
+
+
+
 .botaocadastre{
 margin-right: 49%;
 margin-top: 2%;

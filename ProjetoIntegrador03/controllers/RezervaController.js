@@ -12,16 +12,15 @@ module.exports = {
       // s42 t-55 - modulo Rezerva - buscando informação banco de dados
       // console.log(rezervas)
       // return                  //cada evento de rezerva ?
-        // rezervas = rezervas.map(function(value){
-        //   let day = value.Data.getDate();
-        //   let month = value.Data.getMonth()+1;
-        //   let year = value.Data.getFullYear();          
-        //   value.DataString = day + "/" + month + "/" + year;          
+        rezervas = rezervas.map(function(value){
+          let day = value.Data.getDate();
+          let month = value.Data.getMonth()+1;
+          let year = value.Data.getFullYear();          
+          value.DataString = day + "/" + month + "/" + year;          
           
-        //   return value
-        // })
-        //console.log(Rezervas.Horario)
-        res.render('rezervas', {rezervas});
+          return value
+        })
+        res.render('rezervas', {rezervas, rezervas});
       },
 
         async save (req, res, next) {
@@ -54,8 +53,7 @@ module.exports = {
 
         //Salvando a atualização do registro
         await rezerva.save();
-        // res.render('edit-rezerva',{rezerva, updated: true});
-        res.redirect('/rezervas');    
+        res.render('edit-rezerva',{rezerva, updated: true});
         },
 
         async delete (req, res, next){
