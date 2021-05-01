@@ -2,12 +2,13 @@
 var express = require('express');
 var router = express.Router();
 const RestaurantController = require('../controllers/RestaurantController');
+const auth = require('../middleware/auth')
 
 // const restaurantController = require ("../controllers/RestaurantController");
 
 /* GET home page. */
 // (RestaurantController.index)rota vs oque quer que aconteça quando a rota for processada;
-router.get('/', RestaurantController.index )
+router.get('/', auth, RestaurantController.index )
 
 // 2 - nova rota das mesas
 // (RestaurantController.mesa)rota vs oque quer que aconteça quando a rota for processada; (?)
