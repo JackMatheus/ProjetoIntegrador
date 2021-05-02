@@ -8,6 +8,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   }
+  
+  section#users {
+    margin-left: 8%;
+}
 /* HEADER */
 
 .container00{

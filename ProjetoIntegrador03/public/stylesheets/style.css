@@ -37,7 +37,8 @@ padding:2%;
 
 .nav-item {
   display: inline-block;
-  font-size: min(20px,2vw);
+  /* font-size: min(20px,2vw); */
+  font-size: min(13px,1.5vw);
   /* font-size: 100%; */
   
 }
@@ -45,6 +46,30 @@ padding:2%;
 .img-responsive {
   max-width: 60%;
 }
+
+/*1- Input de pesquisa */
+#search {
+  font-size: min(20px,2vw);
+}
+
+button#btn-search {
+  /* font-size: min(20px,2vw); */
+  font-size: min(15px,1.5vw);
+  margin-top: 4px;
+}
+
+form.row {
+  position: absolute;
+  margin-left: 10%;
+}
+
+/* a.nav-link {
+  font-size: min(10px,1.5vw);
+}
+
+ul.navbar-nav.ml-auto {
+  display: flex;
+} */
 
 /*1- palavra referencia - cliente */
 

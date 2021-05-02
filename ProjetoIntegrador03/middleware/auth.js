@@ -1,5 +1,6 @@
 function auth (req, res, next){
     console.log(req.session.user)
+    // return
     if (typeof(req.session.user) != 'undefined'){
         return next();
     } else {

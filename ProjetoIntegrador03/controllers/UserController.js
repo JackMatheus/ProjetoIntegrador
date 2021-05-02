@@ -19,7 +19,9 @@ module.exports = {
     // return
     
     /* adicionando objeto dentro do array users */
-   await Usuario.create(usuario);
+    const user = await Usuario.create(usuario);
+    // console.log(user)
+    // return
    
     /* cadastrando no arquivo user.js que sera nosso json de usuarios */
     // saveData(users, 'user.js');    
@@ -33,23 +35,36 @@ module.exports = {
 
   async authenticate(req, res, next){
     let { email, password } = req.body;
+  
     let user = await Usuario.findOne({ where: { email } });
     //let rezervas = await Rezerva.findAll(); 
-    
+   
+    console.log(req.body)
+    // return 
+
+    console.log(password, user.password)
+    // return 
+
+       
     if(!user){
       return res.send('nada')
     //return res.render('login', { notFound: true });
     }
 
+    //problema de !bcrypt
     if(!bcrypt.compareSync(password, user.password)){
       return res.send('nada')
     //return res.render('login', { notFound: true });
     }
+
+    // console.log(password, user.password)
+    // return 
+
     
     // removendo o valor propriedade password para que o usuario logado nao trafegue com sua senha
     user.password = undefined;
 
-    // criando sessao contendo informacoes do usuario que ira se logar
+    // criando sessao contendo informacoes do usuario que ira se logar 
     req.session.user = user;
 
     res.redirect('/rezervas');

@@ -1,28 +1,4 @@
 
-
-/* header */
-.container{
-    padding: 2px;
-  }
-  
-  .nav-link{
-  color: rgb(0, 0, 0) !important;
-  font: times news roman, serif ;
-  font-weight: bold;
-  font-size: 1rem;
-  padding:2%;
-  
-  }
-  
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .8rem;
-    padding-left: .8rem;
-  }
-
-  .bg-light {
-    background-color: #e8ebee !important;
-    height: 4rem;} 
-
 /* Cocobambu */
 
 .container{
