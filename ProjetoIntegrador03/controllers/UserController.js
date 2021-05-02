@@ -47,14 +47,14 @@ module.exports = {
 
        
     if(!user){
-      return res.send('nada')
-    //return res.render('login', { notFound: true });
+      
+    return res.render('login', { notFound: true });
     }
 
     //problema de !bcrypt
     if(!bcrypt.compareSync(password, user.password)){
-      return res.send('nada')
-    //return res.render('login', { notFound: true });
+      
+    return res.render('login', { notFound: true });
     }
 
     // console.log(password, user.password)
