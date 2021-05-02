@@ -37,13 +37,13 @@ module.exports = {
     //let rezervas = await Rezerva.findAll(); 
     
     if(!user){
-      return res.send('nada')
-    //return res.render('login', { notFound: true });
+      
+    return res.render('login', { notFound: true });
     }
 
     if(!bcrypt.compareSync(password, user.password)){
-      return res.send('nada')
-    //return res.render('login', { notFound: true });
+      
+    return res.render('login', { notFound: true });
     }
     
     // removendo o valor propriedade password para que o usuario logado nao trafegue com sua senha
